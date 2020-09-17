@@ -1,3 +1,3 @@
 int Foo(){
-  return 777888;
+  return 777;
 }
