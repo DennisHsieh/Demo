@@ -2,7 +2,8 @@
 #include <stdio.h>
   // (Finished) Aim:Tell ppl what is Fibonacci like, and ask for input n for the n-th value of the Fibonacci series.
   // (Finished) Aim2: Print all nubmer from 1st to n-th of the Fibonacci series.
-// Aim3: Overcome long restriction
+// Aim3: Overcome long restriction which is related to Aim4
+// Aim4: Too Slow, there must be some theory I don't know causing slow.
 long Fibonacci(long);
 long printAllFibonacci(long);
 long n;
