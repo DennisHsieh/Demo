@@ -1,13 +1,15 @@
 //Fibonacci
 #include <stdio.h>
+#include <stdlib.h>
   // (Finished) Aim:Tell ppl what is Fibonacci like, and ask for input n for the n-th value of the Fibonacci series.
   // (Finished) Aim2: Print all nubmer from 1st to n-th of the Fibonacci series.
 // Aim3: Overcome int restriction which is related to Aim4
 // Aim4: Too Slow, there must be some theory I don't know causing slow.
 int Fibonacci(int);
 int printAllFibonacci(int);
-int n;
 int main(){
+  // register int n=40;
+  int n;
   printf("Fibonacci series is like 1,1,2,3,5,...\n");
   printf("Input n:= ");
   scanf("%d",&n);
