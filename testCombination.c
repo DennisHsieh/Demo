@@ -1,9 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "Combination.h"
 int main(){
   long m,n;
-  printf("m better not large than 20\n");
   printf("Please input m, n to get combination of m choose n");
   scanf("%ld %ld", &m, &n);
-  Combination(m,n);
+  printf("Combination of m choose n is = %ld", Combination(m,n));
+
+  // system("pause");
 }
