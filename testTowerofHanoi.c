@@ -15,3 +15,9 @@ int HanoiMoveCount(int n){
   }
   return 2*HanoiMoveCount(n-1)+1;
 }
+void HanoiMove(int n){
+  if (n==1){
+    printf("Move it to C\n");
+  }
+  printf("I am not done here!!");
+}
