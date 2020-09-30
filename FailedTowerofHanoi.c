@@ -1,3 +1,4 @@
+// Status: Faied. Cause not able to meet Aim1 yet. Ready to quit
 // Aim1 : Print all the moving procedure
 #include <stdio.h>
 #include <stdlib.h>
