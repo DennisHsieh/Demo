@@ -9,6 +9,7 @@ int main(void){
 }
 void cmove (int n,char a,char b, char c){
 	static int times=0;
+  printf("times now is =%d\n", times);
 	if(n==1){
 		times++;
 	printf("%d times: Move %d from tower %c to %c\n",times,1,a,c);
