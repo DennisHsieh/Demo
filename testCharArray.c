@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+// Aim 1: Not work with for keying in
 int main(){
   int n;
   printf("Input length of your name = ");
