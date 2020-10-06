@@ -21,9 +21,20 @@ int main(){
       scanf("%d",&B[i]);
     }
   }
-  printf("Computer has been prepared.");
+  printf("Computer has been prepared.\n");
   Mora(A,B);
+  // Output result
 }
 void Mora(int A[], int B[]){
-
+  for (int i=0;i<n;i++){
+    if (A[i]-B[i]==1 || A[i]-B[i]==-2){
+      printf("A[%d] > B[%d] , A wins!\n",i,i);
+    }
+    else if (A[i]-B[i]==1 || A[i]-B[i]==2){
+      printf("A[%d] < B[%d] , B wins!\n",i,i);
+    }
+    else{
+      printf("A[%d] = B[%d] , A and B ties!\n",i,i);
+    }
+  }
 }
