@@ -15,6 +15,7 @@ int main(){
     A[i]=rand()%3-1;
     printf("Input B[%d] = ",i);
     scanf("%d",&B[i]);
+    printf("And A[%d] = %d\n",i,A[i]);
     while (B[i]>1 || B[i]<-1){
       printf("Input error, please retype like 1, 0 or -1\n");
       printf("Input B[%d] = ",i);
@@ -30,7 +31,7 @@ void Mora(int A[], int B[]){
     if (A[i]-B[i]==1 || A[i]-B[i]==-2){
       printf("A[%d] > B[%d] , A wins!\n",i,i);
     }
-    else if (A[i]-B[i]==1 || A[i]-B[i]==2){
+    else if (A[i]-B[i]==-1 || A[i]-B[i]==2){
       printf("A[%d] < B[%d] , B wins!\n",i,i);
     }
     else{
