@@ -11,7 +11,7 @@ int main(){
     // printf("a[%d]=%d ",i,a[i]);
   }
   // There are many number from 1 to 10, choose which number you want to find out and output them.
-  printf("Please input value (1~10) you want to search");
+  printf("Please input value (1~10) you want to search = ");
   scanf("%d",&key);
   // Start Finding
   for (int i=0;i<SIZE;i++){
