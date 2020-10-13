@@ -3,8 +3,9 @@
 #define SIZE 200
 long n;
 int main(){
-  printf("Need to come up method to display 50!= \n");
+  printf("Need to come up method to display 50! \n");
   // Use the code we write before Factorial.h
+  printf("Fortunately, here is the solution.\n");
   printf("Input your number n:=");
   scanf("%ld",&n);
   if (n<=20){
@@ -30,21 +31,21 @@ int main(){
       }
     }
     // Handling input value larger than 20
-
     for (int k=21;k<=n;k++){
       int carry=0,tmp=0,i=0;
       // while (i<=DIGIT || carry==0){
-      while (i<=100){
+      while (carry!=0 || i<DIGIT){
         tmp=index[i];
         index[i]=(k*index[i]+carry)%10;
         carry=(k*tmp+carry)/10;
         i++;
-        // j=i;
+        j=i;
       }
     }
     // Print to verify 20!
-    printf("In index view is like \n");
-    for (int i=100;i>=0;i--){
+    printf("Total digit is like \n");
+    printf("%ld! = ",n);
+    for (int i=j-1;i>=0;i--){
       printf("%ld",index[i]);
     }
   }
