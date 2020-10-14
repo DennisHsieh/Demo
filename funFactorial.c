@@ -35,20 +35,20 @@ int main(){
     for (int k=13;k<=n;k++){
       int carry=0,tmp1=0,i=0;
       // while (i<=DIGIT || carry==0){
-      while (carry!=0 || i<DIGIT){
+      while ( carry!=0 || i<=DIGIT){
         tmp1=index[i];
         index[i]=(k*index[i]+carry)%10;
         // printf("index[%d] = %d\n",i,index[i]);
         carry=(k*tmp1+carry)/10;
         i++;
-        j=i;
       }
+      DIGIT=i-1;
     }
     printf("\n");
     // Print to verify 12!
     printf("Total digit is like \n");
     printf("%d! = ",n);
-    for (int i=j-1;i>=0;i--){
+    for (int i=DIGIT;i>=0;i--){
       printf("%d",index[i]);
     }
     printf("\n");
