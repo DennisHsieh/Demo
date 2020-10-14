@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "Factorial.h"
-long n;
+int n;
 int main(){
   printf("Input your number n:=");
-  scanf("%ld",&n);
+  scanf("%d",&n);
   // printf("\n");
-  printf("%ld! = %ld\n",n,Factorial(n));
+  printf("%d! = %d\n",n,Factorial(n));
   return 0;
 }
