@@ -1,28 +1,28 @@
 #include <stdio.h>
 #include "Factorial.h"
 #define SIZE 200
-long n;
+int n;
 int main(){
   printf("Need to come up method to display 50! \n");
   // Use the code we write before Factorial.h
   printf("Fortunately, here is the solution.\n");
   printf("Input your number n:=");
-  scanf("%ld",&n);
-  if (n<=20){
-    printf("%ld! = %ld\n",n,Factorial(n));
+  scanf("%d",&n);
+  if (n<=12){
+    printf("%d! = %d\n",n,Factorial(n));
   }
   else {
-    long Factorial20=Factorial(20),tmp,index[SIZE];
-    int i=0,DIGIT,j;
+    int Factorial12=Factorial(12),tmp;
+    int i=0,DIGIT=0,j=0,index[SIZE];
     for(int i=0;i<SIZE;i++){
       index[i]=0;
     }
-    // Store all Factorial20 to the array
-    tmp=Factorial20;
+    tmp=Factorial12;
+    // Store all Factorial12 to the array
     while (tmp > 0){
       index[i]=tmp%10;
       tmp=tmp/10;
-      // printf("index[%d] = %ld , tmp = %ld\n",i,index[i],tmp);
+      // printf("index[%d] = %d , tmp = %d\n",i,index[i],tmp);
       i++;
       DIGIT=i;
       // Error exception
@@ -30,23 +30,27 @@ int main(){
         printf("SIZE is not large enough\n");
       }
     }
-    // Handling input value larger than 20
-    for (int k=21;k<=n;k++){
-      int carry=0,tmp=0,i=0;
+    // Handling input value larger than 12
+    printf("\n");
+    for (int k=13;k<=n;k++){
+      int carry=0,tmp1=0,i=0;
       // while (i<=DIGIT || carry==0){
       while (carry!=0 || i<DIGIT){
-        tmp=index[i];
+        tmp1=index[i];
         index[i]=(k*index[i]+carry)%10;
-        carry=(k*tmp+carry)/10;
+        // printf("index[%d] = %d\n",i,index[i]);
+        carry=(k*tmp1+carry)/10;
         i++;
         j=i;
       }
     }
-    // Print to verify 20!
+    printf("\n");
+    // Print to verify 12!
     printf("Total digit is like \n");
-    printf("%ld! = ",n);
+    printf("%d! = ",n);
     for (int i=j-1;i>=0;i--){
-      printf("%ld",index[i]);
+      printf("%d",index[i]);
     }
+    printf("\n");
   }
 }
