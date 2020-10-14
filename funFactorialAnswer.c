@@ -12,7 +12,8 @@ int main(void){
 		for(i=0;i<=m;i++){
 			a[i]=a[i]*k;
 			a[i]=a[i]+carry;
-			if((carry=a[i]/10) !=0&&i==m)
+			carry=a[i]/10;
+			if(carry!=0 && i==m)
 			   m++;
 			a[i]=a[i]%10;
 		}
