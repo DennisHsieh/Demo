@@ -16,7 +16,7 @@ int main(){
   char * name1 = "Matt Damon";
   char name2[] = "Dwayne Johnson";
   char name3[12] = "Matt Boomer";
-  char namelist[3];
+  // char namelist[3];
   // namelist[0]=*name1;
   // namelist[1]=*name2;
   // namelist[2]=*name3;
